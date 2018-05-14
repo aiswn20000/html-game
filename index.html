@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Fire Game</title>
-	<script src="js/phaser.min.js"></script>
+	<script src="./js/phaser.min.js"></script>
 </head>
  
 <body>
@@ -24,10 +24,10 @@
 	var eventScore;
 
 	function preload() {
-		game.load.image('box', 'images/box_01_40x40.png');
-		game.load.spritesheet("player", "images/donggo_ani.png", 32, 40);
+		game.load.image('box', './images/box_01_40x40.png');
+		game.load.spritesheet("player", "./images/donggo_ani.png", 32, 40);
 		//game.load.image("ddong", "images/ddong_01_30x30.png");
-		game.load.image("ddong", "images/ddong_01_30x30.png");
+		game.load.image("ddong", "./images/ddong_01_30x30.png");
 	} 
 
 	function create() {
