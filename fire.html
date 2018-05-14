@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fire Game</title>
+    <script src="./js/phaser.min.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        var game = new Phaser.Game(800, 600, Phaser.CANVAS, null,
+        {preload:preload, create:create, update:update});
+        function preload() {
+        // 게임에 필요한 데이터 로드
+        }
+        function create() {
+        // 게임 처음 실행시 수행되는 함수
+        game.physics.startSystem(Phaser.Physics.ARCADE); // 게임 속성 설정(아케이드)
+        game.stage.backgroundColor = "#2F9D27";         // 게임 배경색 설청
+        game.create.texture('sky', ['E'], 800, 80, 0);  // 'E' 코드색상 800x80 크기의 블럭을 'sky' 이름으로 생성
+        game.add.sprite(0, 0, 'sky');   
+        }  
+        function update() {
+        // 프레임워크에서 주기적으로 수행하는 함수
+        }
+    </script>
+</body>
+</html>
